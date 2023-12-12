@@ -183,7 +183,7 @@ Pairing with someone very skilled for an afternoon can sometimes teach you more 
 
 If you’re expecting some huge life event, this is probably not the time to start a project that will need a ton of your energy and attention.
 
-In general, work that matters to the people in your reporting chain is work that builds social capital.  I suspect we all know the kinds of people who only optimize for looking good to leadership, and those aren’t people we tend to respect. But do keep an eye on your current standing with the people who influence your calibration, compensation, access to good projects, and future promotions. Managing up includes understanding your boss’s priorities, giving them the information they need, and solving the problems that are in their way—in other words, helping them be successful. Their success gives them social capital that they can spend to help you.
+In general, work that matters to the people in your reporting chain is work that builds social capital. I suspect we all know the kinds of people who only optimize for looking good to leadership, and those aren’t people we tend to respect. But do keep an eye on your current standing with the people who influence your calibration, compensation, access to good projects, and future promotions. Managing up includes understanding your boss’s priorities, giving them the information they need, and solving the problems that are in their way—in other words, helping them be successful. Their success gives them social capital that they can spend to help you.
 
 Your project can build—or lose—social capital with your peers depending on how it aligns with their values. I’ve seen many disapproving backchannel conversations along the lines of “I’m really surprised to see x person work for x distasteful project or company.”
 
@@ -193,7 +193,7 @@ Some people make you better at your job without setting out to teach you anythin
 
 ively delegate.” He says that there’s guaranteed to be work that shows up on your plate on which you can “get an A” every single time, and if you give it to someone else, they’re probably going to get a B. But, he argues, a B is a pretty great outcome for their first time doing this kind of work: “You’re demonstrating trust by giving them work that’s scary to them and that you know—and they know—is beyond their means. ‘I know you can do this. I’m going to help you with this.’ That’s amazing.” The other person gets to learn. And maybe you can coach them from a B to an A.
 
-Being the responsible person during a major incident also tends to increase credibility and social capital—assuming you do it well. 
+Being the responsible person during a major incident also tends to increase credibility and social capital—assuming you do it well.
 
 You won’t succeed unless you can defend your time. The number of demands on it will increase and the number of available hours will stay the same, so be deliberate about what you prioritize. And, when you choose a project, make sure you have enough of the resources you’ll need to do a good job.
 
@@ -201,4 +201,147 @@ You are responsible for managing your energy.
 
 ### Chapter 5. Leading Big Projects
 
-# the-staff-engineers-path
+What makes a great project lead? It’s rarely genius: it’s perseverance, courage, and a willingness to talk to other people. Sure, there might be times when you need to come up with a brilliant and inspired solution. But, usually, the reason a project is difficult isn’t that you’re pushing the boundaries of technology, it’s that you’re dealing with ambiguity: unclear direction; messy, complicated humans; or legacy systems whose behavior you can’t predict.
+
+The number one tool for success: writing things down.
+
+George Mauer, director of engineering at findhelp.org, told me that he used to feel imposter syndrome, until he realized “99% of people don’t know better than I what to do.”
+
+The difficulty is the point. I find that I can handle ambiguity when I internalize that this is the nature of the work. If it wasn’t messy and difficult, they wouldn’t need you. So, yes, you’re doing something hard here and you might make mistakes, but someone has to. The job here is to be the person brave enough to make—and own—the mistakes. You wouldn’t have gotten to this point in your career without credibility and social capital. A mistake will not destroy you. Ten mistakes will not destroy you. In fact, mistakes are how we learn. This is going to be OK.
+
+Create an anchor for yourself. Here’s how I start, no matter the size of the project: I create a document, just for me, that’s going to act as an external part of my brain for the duration of the project. It’s going to be full of uncertainty and rumors, leads to follow, reminders, bullet points, to-dos, and lists. When I’m not sure what to do next, I’ll return to that document and look at what Past Me thought was important. Putting absolutely everything in one place at least removes the “Where did I write that down?” problem.
+
+Think about who you’re going to talk with when the project is difficult and you’re feeling out of your depth. Your junior engineers are not the right people! While you can and should be open with them about some of the difficulties ahead, they’re looking to you for safety and stability.
+
+In some ways, the start of the project is when it’s easiest to not know things. You can preface any statement with “I’m new to this, so tell me if I have this wrong, but here’s what I think we’re doing” and learn a lot. Later on, it becomes a little more cognitively expensive or may even feel a little embarrassing not to know things.
+
+If you don’t understand what your customers need, you’re not going to build the right thing. And if you don’t have a product manager, you’re probably on the hook for figuring out what those needs are. That means talking to your customers and listening to what they say in response.
+
+Product management is a huge and difficult discipline, and it’s not easy to understand what your users actually want—as opposed to what they’re telling you.
+
+Try not to use jargon, because people can get intimidated and not want to tell you that they didn’t understand.
+
+Remember that tenet of Amazon’s principal engineer community I mentioned in Chapter 2: “Respect what came before.”
+
+If you want to make all of this more sophisticated, a popular tool is RACI, also known as a responsibility assignment matrix. Its name comes from the four key responsibilities most typically used:
+
+-   Responsible: The person actually doing the work.
+-   Accountable: The person ultimately delivering the work and responsible for signing off that it’s done. There’s supposed to be only one accountable person per task, and it will often be the same person as whoever is “Responsible.”
+-   Consulted: People who are asked for their opinion.
+-   Informed: People who will be kept up to date on progress.
+
+Project managers sometimes use a model called the project management triangle, which balances a project’s time, budget, and scope. You’ll sometimes also hear this framed as “Fast, cheap, good: Pick two.”
+
+Probably you’re not going to deliver the whole project in one chunk. If you have multiple use cases or features, you’ll want to deliver incremental value along the way. So decide what you’re doing first, set a milestone, and put a date beside it. Describe what that milestone looks like: what features are included? What can a user do?
+
+If the project is big enough, you might split the work into workstreams, chunks of functionality that can be created in parallel (perhaps with different subteams), each with its own set of milestones.
+
+“Driving doesn’t mean you put your foot on the gas and you just go straight.” Driving, in other words, can’t be passive: it’s an active, deliberate, mindful role. It means choosing your route, making decisions, and reacting to hazards on the road ahead. If you’re the project lead, you’re in the driver’s seat. You’re responsible for getting everyone safely to the destination.
+
+If you really want to reduce complexity, use pictures. There’s no easier way to help people visualize what you’re talking about.
+
+Be aware of existing associations: don’t use a cylinder on your diagram unless you’re OK with many readers thinking of it as a datastore. If you use colors, some of your audience will try to interpret their meaning, for example assuming that green components are intended to be encouraged and red ones should be stopped.
+
+A common approach to sharing information in this way is a design document, often called a request for comment document (or RFC).
+
+Depending on what you’re trying to do, the design section could include:
+
+-   APIs
+-   Pseudocode or code snippets
+-   Architectural diagrams
+-   Data models
+-   Wireframes or screenshots
+-   Steps in a process
+-   Mental models of how components fit together
+-   Organizational charta
+-   Vendor costs
+-   Dependencies on other systems
+
+Here are two tips to make your design more precise:
+
+-   Be clear about who or what is doing the action for every single verb. If you find yourself writing in the passive voice, like “The data will be encrypted in transit” or “The JSON payload will be unpacked,” then you’re obscuring information and making the reader guess. Instead, write with active verbs that have a subject who does the action: “The client will encrypt the data before it is transmitted” or “The Parse component will unpack the JSON payload.”
+-   Instead of saying “this” or “that,” you should add a noun to spell out exactly what you’re referring to, even if you’ve just mentioned it.
+    -   Example: We only have two boxes left. To solve this, we should order more.
+    -   Revision: We only have two boxes left. To solve this shortage, we should order more.
+
+The “alternatives considered” section is where you demonstrate (to yourself and others!) that you’re here to solve the problem and you aren’t just excited about the solution. If you find yourself omitting this section because you didn’t consider any alternatives, that’s a signal that you may not have thought the problem through.
+
+I have a policy that if a plausible-seeming option already exists inside the company and we’re not going to use it, the RFC author has to send the new design to the people who own that system and give them an opportunity to respond.
+
+If you’re the most senior person on the team and you’re sloppy, you’re going to have a sloppy team.
+
+Be clear on what success on the project will look like and how you’ll measure it.
+
+Write things down. Be clear and opinionated. Wrong gets corrected, vague sticks around.
+
+### Chapter 6. Why Have We Stopped?
+
+Escalating doesn’t mean raising a ruckus or complaining about the other team. It means holding a polite conversation with someone who has the power to help, and trying to solve a problem together. Keep it constructive.
+
+Our team motto became “lack of planning on your part is not an emergency on mine.”
+
+“A good Three Bullets and a Call to Action email contains (at most) three bullet points detailing the issue at hand, and one—and only one—call to action. That’s it, nothing more—you need to write an email that can be easily forwarded along. If you ramble or put four completely different things in the email, you can be certain that they’ll pick only one thing to respond to, and it will be the item that you care least about. Or worse, the mental overhead is high enough that your mail will get dropped entirely.”
+
+Denise Yu, a manager at GitHub, describes “the art of the rollup”: summarizing all of the information in one place to “create clarity and reduce chaos.” It’s a versatile technique, useful in any situation where there’s a ton of backstory and several different narrative threads and where some people might not have kept track of what’s going on.
+
+Aggregating the facts that go into the rollup is a great way to build your knowledge and make sure you understand what’s going on. But writing it all down also might mean you synthesize new information that nobody had articulated before.
+
+If you’re someone who hates asking for help, remember that by learning from other people’s experiences, you’re amortizing the time they had to spend learning the same thing: it’s inefficient to have you both figure out solutions from first principles.
+
+Heidi Waterhouse, a developer advocate for LaunchDarkly, once blew my mind with the observation that “nobody wants to use software. They want to catch a Pokémon.” A user who wants to play a video game doesn’t care what language the code is in or which interesting algorithmic challenges you’ve solved. Either they can catch a Pokémon or they can’t. If they can’t, the software may as well not exist.
+
+Before you start the work, agree on what the end state will look like. The Agile Alliance proposes setting a definition of done, the criteria that must be true before any user story or feature can be declared finished.
+
+Is it possible for you to regularly use what you’re building? Of course, this isn’t always going to apply, but if there’s a way for you to share your customers’ experience, take the time to do that. This is sometimes called eating your own dog food or “dogfooding.”
+
+Celebrate shipping things to users, rather than milestones that are only visible to internal teams. You don’t get to celebrate until users are happily using your system. If you’re doing a migration, celebrate that the old thing got turned off, not that the new thing got launched.
+
+Michael R. Bernstein has a great analogy for creating solutions and then not marketing them at all. He says it’s like a farmer planting seeds, watering, weeding, and growing a crop, and then just leaving it in the field. You need to harvest what you grew, take it to people, and show them why they want it. The best software in the world doesn’t matter if users don’t know it exists or aren’t convinced it’s worth their time. You need to do the marketing.
+
+I used to work in a data center, a long time ago, and one thing I learned there is that there’s no such thing as a temporary solution. If someone ran a cable from one rack to another without neatly cabling and labeling it, it would stay there until the server was decommissioned. The same is true for every temporary hack: if you don’t have it in good shape by the end of the project, it’s going to take extraordinary effort to clean it up later.
+
+## Part III. Leveling Up
+
+### Chapter 7. You’re a Role Model Now (Sorry)
+
+This is the blessing and the curse of a staff engineer title: people will assume you know what you’re talking about—so you’d better know what you’re talking about! Your work will be a little less checked and your ideas considered more credible. Rather than guiding you, people will look to you for guidance.
+
+There will be times when you’ll think “This is a problem and someone should say something”…and realize with a sinking feeling that that someone is you.
+
+The clearest indicator of what the company values is what gets people promoted.
+
+If your engineering principles describe a culture of thorough code reviews, but senior engineers approve PRs without reading them, everyone else will rubber-stamp code reviews too. The work that you do is implicitly the type and standard of work that others will see as correct and emulate.
+
+Staff engineers typically have at least 10 and principal engineers have at least 15 years of experience.
+
+Never, ever accept a managerial role until you are already solidly senior as an engineer. To me this means at least seven years or more writing and shipping code; definitely, absolutely no less than five. It may feel like a compliment when someone offers you the job of manager—hell, take the compliment upside-down face emoji—but they are not doing you any favors when it comes to your career or your ability to be effective.
+
+Being a senior engineer means having a growth mindset and a drive to improve. It’s embarrassing for everyone when a technical leader insists on a “best practice” that has been debunked for a decade or a technology that everyone else has moved on from. Stay engaged with what’s happening in your part of the industry.
+
+Admitting ignorance is one of the most important things we can do as tech leads, senior engineers, mentors, managers, and other influencers of team culture. I love asking for an “ELI5,” a term that comes from Reddit and means “Explain it like I’m five years old.” It’s a helpful shortcut to mean “Look, rather than guessing my level of understanding, just spell it out for me. I promise not to be offended if you tell me things I already know.” (The social contract here is that you can’t get offended if they start with the very basics of the topic.)
+
+When you “request comments,” don’t secretly resent them; each one is an opportunity to make your solution better, so take them seriously even if you don’t use them all. Your solutions are not you and they don’t define you. Criticism of your work isn’t criticism of you.
+
+Making a mistake just stings. Solving the problem you caused may be the last thing you want to do in that moment. But it’s the best thing you can do to retain the goodwill and social capital of your team. If you react well and fix the problem you caused, you could even end up with more esteem from your colleagues. And a leader being open about their mistakes will make it easier for everyone else to do the same: it’s a big boost to the team’s psychological safety.
+
+Someone needs to be brave enough to say, “I don’t know what to do with the information you just gave me!” Take charge and ask. Tech can be fraught with egos and insecurity, and it’s sometimes scary (or legitimately risky!) for junior people to admit that they don’t know something. It’s safer for senior people to ask.
+
+If the meeting doesn’t have notes, was it really worth getting together? Meeting notes are a great example of glue work.
+
+As a senior engineer, you have a responsibility to the future as well as the present. You will always be responsible for creating software that stands up under stress. But you’re working for a business (or a nonprofit, government agency, or other organization) that has goals. The software is the means to those ends, not an end in itself.
+
+Take Dan McKinley’s advice too and be judicious about where you spend your “innovation tokens”: that is, your company’s “limited capacity to do something creative, or weird, or hard.” If you can only invest in a few places, is this the right place?
+
+Your organization, codebase, and production environment probably existed before you joined them. They’ll probably exist after you move on. Don’t optimize for now at the cost of future velocity or engineering ability. It’s OK to plant some seeds that you won’t personally see grow.
+
+Anticipate What You’ll Wish You’d Done.
+
+Every time someone leaves your company, you lose institutional knowledge.
+
+Software is created once, but it will need to be maintained for years.
+
+Someday your system will be turned off. How hard is that going to be for the people working on it then? Will they have to dig deep into the logic of other systems, unwinding tendrils that touch business logic and tracing through code to understand what data they’re accessing? Or will there be a clean interface and a simple cutover?
+
+Your junior engineers are future senior engineers. Give them the space to learn, and opportunities to do hands-on work and solve increasingly difficult problems.
+
+The degree to which other people want to work with you is a direct indication of how successful you’ll be in your career as an engineer. Be the engineer that everyone wants to work with.
